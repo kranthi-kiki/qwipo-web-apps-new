@@ -1,0 +1,40 @@
+{
+  "implicitDependencies": {
+    "package.json": {
+      "dependencies": "*",
+      "devDependencies": "*"
+    },
+    ".eslintrc.json": "*"
+  },
+  "affected": {
+    "defaultBase": "master"
+  },
+  "npmScope": "qwipo-web-apps",
+  "tasksRunnerOptions": {
+    "default": {
+      "runner": "@nrwl/nx-cloud",
+      "options": {
+        "cacheableOperations": [
+          "build",
+          "lint",
+          "test",
+          "e2e"
+        ],
+        "accessToken": "NDUyODg4YWUtZTM0Yi00NTU5LTgyYWQtMzIwOTA5MWY1NjZhfHJlYWQtd3JpdGU=",
+        "canTrackAnalytics": false,
+        "showUsageWarnings": true
+      }
+    }
+  },
+  "projects": {
+    "vendor-ops": {
+      "tags": []
+    },
+    "vendor-ops-e2e": {
+      "tags": [],
+      "implicitDependencies": [
+        "vendor-ops"
+      ]
+    }
+  }
+}

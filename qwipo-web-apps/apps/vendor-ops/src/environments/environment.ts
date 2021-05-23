@@ -4,6 +4,15 @@
 
 export const environment = {
   production: false,
+  firebaseConfig: {
+    apiKey: 'AIzaSyCQxan-AN2bk2GTyav2PfKU2raT_QYlNiA',
+    authDomain: 'test-qwipo.firebaseapp.com',
+    databaseURL: 'https://test-qwipo.firebaseio.com',
+    projectId: 'test-qwipo',
+    storageBucket: 'test-qwipo.appspot.com',
+    messagingSenderId: '1002423689795',
+    appId: '1:1002423689795:web:368c953cccebfe247b2af6',
+  },
 };
 
 /*

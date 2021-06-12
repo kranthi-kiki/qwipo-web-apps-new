@@ -12,7 +12,7 @@ const routes: Routes = [
   {
     path: 'auth', loadChildren: () => import('./auth/auth.module').then((m) => m.AuthModule)
   },
-  // { path: '**', redirectTo: 'pages' },
+  { path: '**', redirectTo: 'pages/home' },
 ];
 const config: ExtraOptions = {
   useHash: true,

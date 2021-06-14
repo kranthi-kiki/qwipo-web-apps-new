@@ -1,15 +1,18 @@
-import { Component, OnInit } from '@angular/core';
+/* eslint-disable @angular-eslint/component-selector */
+import { APP_ROUTES } from './../../constants/app-routes';
+import { Component } from '@angular/core';
 
 @Component({
-  selector: 'qwipo-web-apps-sidebar',
+  selector: 'app-sidebar',
   templateUrl: './sidebar.component.html',
   styleUrls: ['./sidebar.component.scss']
 })
-export class SidebarComponent implements OnInit {
+export class SidebarComponent {
+  app_Routes = APP_ROUTES;
+  public isOpenUiElements = false;
 
-  constructor() { }
-
-  ngOnInit(): void {
+  public openUiElements() {
+    this.isOpenUiElements = !this.isOpenUiElements;
   }
 
 }
